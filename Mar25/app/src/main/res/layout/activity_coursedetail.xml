@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/coursedetailImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slide"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:id="@+id/coursedetail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coursedetailImageView"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/coursedetail_coursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="育儿课堂"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/coursedetail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥2000"
+            android:textSize="25sp"
+            android:textColor="#47bb96"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/coursedetail_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/coursedetail_coursename"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_red"
+                android:background="#111111"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_red"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_red"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_red"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_red"/>
+
+            <TextView
+                android:id="@+id/coursedetail_ratenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30份评价"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/coursedetail_enrollnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120人报名"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/coursedetail_timelocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coursedetail_rate"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/coursedetail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开课时间:"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/coursedetail_showtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016.1.1-2016.12.31"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/coursedetail_time"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/coursedetail_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开课地点:"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_below="@+id/coursedetail_time"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/coursedetail_showlocaton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南京市玄武区四牌楼2号"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/coursedetail_location"
+                android:layout_below="@+id/coursedetail_showtime"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/coursedetail_saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="#47bb96"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/coursedetail_intro_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/coursedetail_info"
+        android:layout_above="@+id/coursedetail_signupButton"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/viewpager_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介"
+                android:textSize="20sp"
+                android:textColor="#47bb96"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/viewpager_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目录"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/viewpager_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/coursedetail_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="true">
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/coursedetail_signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="我要报名"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#47bb96">
+    </Button>
+</RelativeLayout>
