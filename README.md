@@ -9,7 +9,8 @@ Step 2: git commit -m"your comments"
 Step 3: git push -u origin master
 
 
-二、删除文件或文件夹
+二、删除文件或文件夹：
+
 Step 1: git rm -rf foldername (删除文件：git rm test.txt)
 
 Step 2: git commit -m"your comments"
